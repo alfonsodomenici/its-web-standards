@@ -1,0 +1,34 @@
+h1{
+   color: red; 
+}
+/*
+
+*/
+p{
+   color: gray;
+}
+
+.special {
+   color: orange;
+   font-weight: bold;
+ }
+
+ #pStudiate{
+    color: aqua;
+ }
+
+ li:hover{
+    color:aquamarine;
+ }
+ 
+ body{
+    display: flex;
+ }
+ 
+ .box{
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px  solid red;
+ }
