@@ -22,13 +22,29 @@ p{
  }
  
  body{
-    display: flex;
+
  }
  
  .box{
     width: 100px;
     height: 50px;
-    margin: 20px;
-    padding: 10px;
+    margin: 20px auto;
+    padding-top: 30px;
     border: 2px  solid red;
+ }
+
+ .boximg{
+   background-image: url('../linux.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100px;
+   height: 150px;
+   margin: 20px auto;
+   border: 2px  solid black;
+}
+
+ img{
+    display: block;
+    margin: 20px auto;
+    max-height: 100px;
  }

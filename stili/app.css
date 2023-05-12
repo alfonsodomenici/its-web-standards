@@ -1,0 +1,98 @@
+/*
+------------- Layout ----------------------
+*/
+
+.app-grid-common{
+    padding: 5px 50px;
+    height: 100vh;
+    background-color: aliceblue;
+    display: grid;
+}
+
+@media screen and (min-width: 800px) {
+    .app-grid {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr 5fr 1fr;
+        grid-template-areas:
+            "nav nav"
+            "header header"
+            "content sidebar"
+            "footer footer"
+        ;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .app-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 5fr 2fr 1fr;
+        grid-template-areas:
+            "nav"
+            "header"
+            "content"
+            "sidebar"
+            "footer"
+        ;
+        gap: 5px;
+    }
+}
+
+
+.app-header {
+    grid-area: header;
+    background-color: antiquewhite;
+}
+
+.app-nav {
+    grid-area: nav;
+    background-color: greenyellow;
+}
+
+.app-content {
+    grid-area: content;
+    background-color: grey;
+}
+
+.app-sidebar {
+    grid-area: sidebar;
+    background-color: gold;
+}
+
+.app-footer {
+    grid-area: footer;
+    background-color: coral;
+}
+
+/*
+------------------- Menu ------------------
+*/
+
+menu {
+    height: 100%;
+    padding-inline-start: unset;
+    margin: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+menu li {
+    display: block;
+    height: max-content;
+    padding: 5px;
+    margin: 5px;
+    background-color: deeppink;
+}
+
+menu li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+menu li a:hover {
+    background-color: cyan;
+    color: deeppink;
+}

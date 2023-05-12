@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "content sidebar"
+        "footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: burlywood;
+    grid-column: 1/3;
+}
+
+nav {
+    grid-area: nav;
+    background-color: beige;
+}
+
+main {
+    grid-area: content;
+    background-color: aliceblue;
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: honeydew;
+}
+
+footer {
+    grid-area: footer;
+    background-color: cornsilk;
+}
