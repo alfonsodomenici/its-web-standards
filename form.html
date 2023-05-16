@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esempio Form</title>
+    <style>
+        .form{
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-items: flex-start;
+            align-items: stretch;
+        }
+
+        .field{
+            padding: 1rem;
+        }
+
+        label{
+            display: block;
+            padding: 0.5rem 0;
+        }
+        .control{
+            display: block;
+            width: 100%;
+            height: 2rem;
+        }
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .button{
+            display: block;
+            padding: 0.5rem;
+            margin: 1rem;
+        }
+
+        .success{
+            background-color: darkseagreen;
+        }
+        .success:hover{
+            background-color: darkolivegreen;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" class="form">
+        <div class="field">
+            <label for="nome" >Nome</label>
+            <input class="control" type="text" name="" id="nome" placeholder="inserisci il tuo nome">
+        </div>
+
+        <div class="field">
+            <label for="cognome">Cognome</label>
+            <input class="control" type="text" name="" id="cognome" placeholder="inserisci il tuo cognome">
+        </div>
+
+        <div class="field">
+            <label for="dn">Data di Nascita</label>
+            <input class="control" type="date" name="" id="dn">
+        </div>
+
+        <div class="buttons">
+            <input class="button success" type="button" value="Invia">
+            <button class="button">Annulla</button>
+        </div>
+    </form>
+</body>
+
+</html>
