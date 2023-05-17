@@ -1,5 +1,5 @@
 /*
-funzione somma. Verifica che a e b siano numeri altrimenti
+dichiaro la funzione somma. Verifica che a e b siano numeri altrimenti
 genera un errore.
 ritorna la somma a + b
 */
@@ -15,8 +15,10 @@ click su bottone somma
 */
 function onSomma(e) {
     try {
-        const ris = somma(document.querySelector('#n1').value,
-            document.querySelector('#n2').value);
+        const op1 = document.querySelector('#n1').value;
+        const op2 = document.querySelector('#n2').value;
+        //richiamo la funzione somma
+        const ris = somma(op1,op2);
         document.querySelector('#out').innerText = "Risultato: " + ris;
     }catch(e){
         document.querySelector('#out').innerText = 'Risultato: ' + e.message;
