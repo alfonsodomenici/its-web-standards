@@ -1,10 +1,14 @@
 window.addEventListener("DOMContentLoaded", init());
 
+
 function init() {
     loadSelCat();
     loadSelBrand();
-    
-
+    document.querySelector('#selcat')
+        .addEventListener('change',(e) => {
+            //alert(e.target.value);
+            loadProdsByCat(e.target.value)
+        })
 }
 
 function loadProdsByCat(category) {
