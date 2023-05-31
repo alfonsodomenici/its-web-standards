@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest</title>
+    <style>
+        td,tr{
+            border:1px solid black;
+        }
+        .tbprod{
+            width:100%;
+            border-collapse: collapse;
+        }
+        .tbprod h2 {color:darkblue ; font-size:22px}
+        .tbprod td {font-size: 13px;}
+        header{
+            background-color: antiquewhite;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        button{
+            display: block;
+            margin: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BROWSE DUMMYJSON PRODUCTS</h1>
+            <div>Seleziona Categoria: 
+                <select id="selcat" name="selcat" onchange="loadProdsByCat(this.value)"></select>
+                 -  Seleziona Brand: 
+                <select id="selbr" name="selbr"></select>
+            </div> 
+    </header>
+    <main>
+    </main>
+    <script src="dummyjson.js"></script>
+
+</body>
+</html>
